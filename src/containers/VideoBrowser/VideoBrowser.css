@@ -1,0 +1,10 @@
+.video-browser{
+    padding: 10px;
+}
+
+.video-browser__segment{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    height: 75vh;
+}

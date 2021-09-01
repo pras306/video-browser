@@ -1,0 +1,16 @@
+.video-tile{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    box-shadow: 1px 5px 5px 5px rgba(0, 0, 0, 0.75);
+    padding: 20px;
+}
+
+.video-tile__segment{
+    height: 100%;
+}
+
+.video-tile__segment__video{
+    width: 100%;
+    height: 80%;
+}
