@@ -15,7 +15,6 @@ class VideoBrowser extends React.Component {
     }
 
     onSearchSubmit = async(term) => {
-        console.log(YOUTUBE_API_BASE_PARAMS);
         let response = await YOUTUBE_API.get(requests.getVideos,{
             params:{
                 ...YOUTUBE_API_BASE_PARAMS,
