@@ -2,8 +2,7 @@ import React from 'react';
 
 import './VideoBrowser.css';
 import SearchBar from '../../components/SearchBar/SearchBar';
-import { YOUTUBE_API, YOUTUBE_API_BASE_PARAMS } from '../../apis/axios';
-import requests from '../../apis/requests';
+import { PROXY_YOUTUBE_API } from '../../apis/requests';
 import VideoTile from '../../components/VideoTile/VideoTile';
 import VideoList from '../../components/VideoList/VideoList';
 
@@ -15,16 +14,11 @@ class VideoBrowser extends React.Component {
     }
 
     onSearchSubmit = async(term) => {
-        let response = await YOUTUBE_API.get(requests.getVideos,{
-            params:{
-                ...YOUTUBE_API_BASE_PARAMS,
-                q: term
-            }
-        });
+        let response = await PROXY_YOUTUBE_API.get(term);
 
         this.setState({ 
-            videos: response.data.items,
-            selectedVideo: response.data.items[0]
+            videos: response.data,
+            selectedVideo: response.data[0]
         });
     }
 
