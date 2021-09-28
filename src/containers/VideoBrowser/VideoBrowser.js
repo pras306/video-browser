@@ -14,12 +14,20 @@ class VideoBrowser extends React.Component {
     }
 
     onSearchSubmit = async(term) => {
-        let response = await PROXY_YOUTUBE_API.get(term);
+        try {
+            let response = await PROXY_YOUTUBE_API.get(term);
 
-        this.setState({ 
-            videos: response.data,
-            selectedVideo: response.data[0]
-        });
+            if(response.data.length <= 0 || response.data.Error) {
+                throw new Error("Search resulted in zero videos from Youtube.");
+            }
+
+            this.setState({
+                videos: response.data,
+                selectedVideo: response.data[0]
+            });
+        } catch(err) {
+            alert(err.message);
+        }
     }
 
     onVideoSelect = (video) => {
