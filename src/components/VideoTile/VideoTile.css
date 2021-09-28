@@ -2,12 +2,23 @@
     display: flex;
     flex-direction: column;
     width: 70%;
+    background-color: #CCF381;
+    border-radius: 20px;
     box-shadow: 1px 5px 5px 5px rgba(0, 0, 0, 0.75);
     padding: 20px;
 }
 
 .video-tile__segment{
     height: 100%;
+}
+
+.video-tile__segment > h2 {
+    font-family: var(--ff-primary);
+    font-size: 1.3rem !important;
+}
+
+.video-tile__segment > p {
+    font-family: var(--ff-primary);
 }
 
 .video-tile__segment__video{
