@@ -41,3 +41,9 @@
 .search-bar__form > input:focus::placeholder {
     color: var(--bgc-secondary);
 }
+
+@media screen and (max-width: 576px) {
+    .search-bar__form > label, .search-bar__form > input {
+        font-size: small;
+    }
+}

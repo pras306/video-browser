@@ -3,3 +3,9 @@
   height: 100vh;
   background-color: var(--bgc-primary);
 }
+
+@media screen and (max-width: 992px) {
+  .app {
+    overflow: scroll;
+  }
+}
