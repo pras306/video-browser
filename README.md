@@ -59,12 +59,12 @@ Start the server
 ## API References
 
 - [Youtube API](https://developers.google.com/youtube/v3)
-- [Custom Proxy Server for hiding API key](https://backend-portfolio-proxy.herokuapp.com)
+- Custom Proxy Server for hiding API key - [https://backend-portfolio-proxy.herokuapp.com/api/v1](https://backend-portfolio-proxy.herokuapp.com/api/v1)
 
-#### Get images
+#### GET Videos
 
 ```http
-  GET /api/v1/videos/search/${term}
+  GET /videos/search/${term}
 ```
 
 | Parameter   | Type     | Description                                       |
