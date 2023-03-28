@@ -59,7 +59,7 @@ Start the server
 ## API References
 
 - [Youtube API](https://developers.google.com/youtube/v3)
-- Custom Proxy Server for hiding API key - [https://api-proxy-server.up.railway.app/api/v1](https://api-proxy-server.up.railway.app/api/v1)
+- Custom Proxy Server for hiding API key - [https://api-proxy-server-6xbe.onrender.com/api/v1](https://api-proxy-server-6xbe.onrender.com/api/v1)
 
 #### GET Videos
 
